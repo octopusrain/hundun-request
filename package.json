@@ -1,0 +1,42 @@
+{
+  "name": "hundun-request",
+  "version": "1.0.2",
+  "description": "混沌请求库",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rm -rf lib && rollup -c",
+    "release": "npm run build && sh .publish.sh",
+    "test": "jest"
+  },
+  "author": "zhangyu@hundun.cn",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octopusrain/hundun-request.git"
+  },
+  "keywords": [
+    "hundun",
+    "request"
+  ],
+  "bugs": {
+    "url": "https://github.com/octopusrain/hundun-request.git/issues"
+  },
+  "homepage": "https://github.com/octopusrain/hundun-request.git#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/preset-env": "^7.10.4",
+    "babel-jest": "^26.1.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-esbuild": "^2.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^3.1.2",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-uglify": "^6.0.4"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.8.7",
+    "crypto-js": "^4.0.0"
+  }
+}
